@@ -1,7 +1,6 @@
-FROM debian:jessie
-MAINTAINER lajos.papp@sequenceiq.com
+FROM dockerfile/ubuntu:latest
 
-RUN apt-get update && apt-get install -y socat
+RUN apt-get update && apt-get install -qq -y --no-install-recommends socat
 COPY ./start /
 
 CMD ["/start"]

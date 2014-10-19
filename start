@@ -16,8 +16,8 @@ main() {
     docker run -d \
       -p $PORT:$PORT
       --volume=$SOCKET:$SOCKET \
-      --name=docker-http \
-      sequenceiq/socat
+      --name=docker-host-proxy \
+      dweinstein/docker-host-proxy
 EOF
   fi
 }

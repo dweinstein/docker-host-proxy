@@ -13,15 +13,7 @@ via simple http. So after upgrading to 1.3.0 they might break.
 ## Workaround
 
 One solution is to start a container which uses `socat` to proxy the unix
-socket file as tcp port. It is containerized for you:
+socket file as tcp port. It is containerized for you
 
-```
-$(docker run sequenceiq/socat)
-```
-
-Now you can reach Docker the *old* way:
-
-```
-curl http://192.168.59.103:2375/_ping
-OK
-```
+## Original
+See the [original](https://github.com/sequenceiq/docker-socat)
