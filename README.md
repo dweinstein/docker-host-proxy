@@ -13,7 +13,13 @@ via simple http. So after upgrading to 1.3.0 they might break.
 ## Workaround
 
 One solution is to start a container which uses `socat` to proxy the unix
-socket file as tcp port. It is containerized for you
+socket file as tcp port.
+
+## Running
+```
+> $(docker run --rm dweinstein/docker-host-proxy)`
+```
 
 ## Original
 See the [original](https://github.com/sequenceiq/docker-socat)
+
